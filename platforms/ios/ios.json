@@ -1,0 +1,44 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Bridging\"><param name=\"ios-package\" onload=\"true\" value=\"Bridging\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": []
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "mm.test.iherem"
+        },
+        "bridging": {
+            "PACKAGE_NAME": "mm.test.iherem"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "bridging.bridging",
+            "file": "plugins/bridging/www/bridging.js",
+            "pluginId": "bridging",
+            "clobbers": [
+                "bridging"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.2",
+        "bridging": "3.0.0"
+    }
+}
